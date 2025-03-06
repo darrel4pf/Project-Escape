@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escape Room</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+  <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+  <section class="hero is-fullheight has-background-black">
+    <div class="hero-body">
+      <div id="main-body" class="container">
+        <div id="clue-1" class="container has-text-centered">
+
+
+          <h1 data-heading="i">Level Three</h1>
+
+          <br>
+
+
+          <img id="dog"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5uAhXMI5krRE1ny9ev1ofetDe7rK3K4NztA&usqp=CAU"
+            onclick="audio.play();" />
+
+          <p id="riddle">
+            <button onclick="wrongFunction()" class="button is-large">WOOF</button>
+            <button class="button is-large" onclick="dogFunction()">WOOF WOOF</button>
+            <button onclick="wrongFunction()" class="button is-large">WOOF WOOF WOOF</button>
+            <button onclick="wrongFunction()" class="button is-large">WOOF WOOF WOOF WOOF</button>
+          </p>
+          <br>
+          <p class="title as-text-centered hidden" id="remember">
+            CAN YOU STILL REMEMBER?
+          </p>
+          <div id="color" class="container center hidden">
+
+
+      
+            <img id='red'
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0gZ5Yo1MsxoZ1XefDKb1XbuDPzd2gXejKRtF2m9_i9lReqK-oYNe_C1J7EXRPX3DVBh0&usqp=CAU" />
+
+            <img id='blue'
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcdMJAzKlqaOcT_8NuMUvIQHMRlL5J8G6O2oLcvg-aEbqPpRbP6X70q0ExayFpzHe2JBI&usqp=CAU" />
+
+            <img id='yellow'
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Solid_yellow.svg/640px-Solid_yellow.svg.png"
+              width="225" height="225">
+
+            <img id='purple' src="https://colors.artyclick.com/color-names-dictionary/colors/9172EC/color_9172EC.png"
+              width="225" height="225" />
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <script type="text/javascript" src="levelthree.js"></script>
+
+
+</body>
+
+</html>

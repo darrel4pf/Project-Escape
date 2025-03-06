@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escape Room</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="leveltwo.css" type="text/css">
+  </head>
+
+<body id = "wrongAnswer">
+<div class="bg"></div>
+    <section class="hero is-fullheight has-background-black">
+      <div class="hero-body">
+        <div id="main-body" class="container">
+          <div id="clues" class="container">
+            <h1 class = "center has-text-light">Level Two?</h1>
+            
+            
+            <br>
+            <br>
+            <p class="center has-text-light" id="riddle">
+              5+5 = 25 <br>
+              6+6 = 36 <br>
+              7+7 = 49 <br>
+              8+8 = ?? <br>
+            </p>
+            <p id="buttonHolder">
+              
+            </p>
+            <br>
+            <div id = "divInput">
+            <input type="text" id="myInput" placeholder="Enter your answer..."></input>
+              <br>
+              <br>
+              <button onclick = "myRiddleFunction()" id = "submit" class = "button is-black">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script type="text/javascript" src="leveltwo.js"></script>
+  
+
+</body>
+
+</html>

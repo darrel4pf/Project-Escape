@@ -1,0 +1,138 @@
+#main {
+    max-width: 512px;
+  }
+  
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .small {
+    max-width: 100px;
+    max-height: 100px;
+  }
+  
+  button {
+    font-family:'Courier New', Courier, monospace;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  a {
+      text-decoration: none;
+      color: inherit;
+  }
+  
+  #divInput {
+    text-align: center;
+  }
+  
+  .has-image-centered {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+  }
+  
+  #mybutton {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+  }
+  
+  #hinttext {
+    position: fixed;
+    bottom: 0px;
+    left: 50px;
+  }
+  
+  ::placeholder {
+    font-family:'Courier New', Courier, monospace;
+  }
+  
+  h1 {
+    font-family: 'CoreCircus', sans-serif;
+    font-size: 14vw;
+    text-align: center;
+    line-height: 1;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    color: h1;
+    letter-spacing: -.5rem;
+    
+    &:before {
+      content: attr(data-heading);
+      position: absolute;
+      overflow: hidden;
+      color: yellow;
+      width: 100%;
+      z-index: 5;
+      text-shadow: none;
+      left: 27%;
+      text-align: left;
+      animation: flicker 3s linear infinite;
+    }
+  }
+  
+  
+  @font-face {
+    font-family: 'CoreCircus2DDot1';
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.eot');
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.eot?#iefix') format('embedded-opentype'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.woff2') format('woff2'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.woff') format('woff'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'CoreCircus';
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.eot');
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.eot?#iefix') format('embedded-opentype'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.woff2') format('woff2'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.woff') format('woff'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.ttf') format('truetype');
+  }
+  
+  body {
+    background-color: #111111;
+    margin: 0;
+    overflow-x: hidden;
+  }
+  
+  .bg {
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    right: -50%;
+    bottom: -50%;
+    width: 200%;
+    height: 200vh;
+    background: transparent url('http://assets.iceable.com/img/noise-transparent.png') repeat 0 0;
+    background-repeat: repeat;
+    animation: bg-animation .2s infinite;
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  @keyframes bg-animation {
+      0% { transform: translate(0,0) }
+      10% { transform: translate(-5%,-5%) }
+      20% { transform: translate(-10%,5%) }
+      30% { transform: translate(5%,-10%) }
+      40% { transform: translate(-5%,15%) }
+      50% { transform: translate(-10%,5%) }
+      60% { transform: translate(15%,0) }
+      70% { transform: translate(0,10%) }
+      80% { transform: translate(-15%,0) }
+      90% { transform: translate(10%,5%) }
+      100% { transform: translate(5%,0) }
+  }
